@@ -4,7 +4,7 @@
 void main()
 {
 	int i, j, k;
-        for (i = 0; i < 10; i++);                                    //行循环
+        for (i = 0; i < 10; i++);                             //行循环
 	{
 		for (j = 10 ; j > 0 ; j--)                    //列循环
 		{
