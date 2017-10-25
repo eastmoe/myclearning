@@ -18,7 +18,7 @@ void main()
 			}
 		}
 		
-		printf("%s","\n");                            //换行      
+		printf("\n");                                 //换行      
 	}
 	system("pause");                                      //暂停
 
