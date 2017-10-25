@@ -1,20 +1,26 @@
+
 #include <stdio.h>
+	
 void main()
 {
- int i,j,k;
- for(i=0,i<10,i++)
- { 
-   for(j=10,j>i,j--);
-   {
-     printf(" ");
-   }
-   for(k=0,k<i,k++)
-   {
-     printf("*");
-   }
-   printf ("\n");
- }
-system("pause");
+	int i, j, k;
+ for (i = 0; i < 10; i++);          //行循环
+	{
+		for (j = 10 ; j > 0 ; j--)        //列循环
+		{
+			if (i + 1 < j)                   //判断行数是否小于10-当前列数
+			{
+				printf("%s"," ");               //是，输出空格
+			}
+			else
+			{
+				printf("%s","*");               //否，输出*号
+			}
+		}
+		
+		printf("%s","\n");                //换行      
+	}
+	system("pause");                   //暂停
 
-return 0;
+	
 }
