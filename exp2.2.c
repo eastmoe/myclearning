@@ -11,17 +11,17 @@ void main()
   {
    if(f=>75)
    {
-    printf("The grade is B"); //分数在[75,89]之间，输出B
+    printf("The grade is B."); //分数在[75,89]之间，输出B
    }
    else
    {
     if(f=>60)
     {
-     printf("The grade is C"); //分数在[60,74]之间，输出C
+     printf("The grade is C."); //分数在[60,74]之间，输出C
     }
     else
     {
-     printf("The grade is D"); //分数小于等于59,输出D
+     printf("The grade is D."); //分数小于等于59,输出D
     }
    }
   }
