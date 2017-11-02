@@ -15,5 +15,5 @@ void main()
  {
   max=c; //如果max<c，将c的值赋给max，否则，max的值不变
  }
- printf ("%d",max); //输出max
+ printf ("%d\n",max); //输出max
 }
