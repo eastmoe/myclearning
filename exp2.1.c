@@ -3,7 +3,7 @@ int a,b,c,max; //定义a,b,c,max4个变量
 void main()
 {
  scanf("%d,%d,%d",&a,&b,&c); //输入a,b,c
- if(a=>b)
+ if(a>=b)
  {
   max=a;
  }
