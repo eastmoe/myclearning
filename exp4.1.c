@@ -33,7 +33,7 @@ void main()
  int number1,number2; \\在主函数中定义number1和number2
  scanf("number1=%d,number2=%d",&number1,&number2); \\输入number1和number2
  int temp; \\定义用于交换大小的中间变量temp
- if(number2>number1) \\当number2的值比number1大时，交换number2的值
+ if(number2>number1) \\当number2的值比number1大时，交换number1和number2的值
   {
    temp=number2;
    number2=number1;
