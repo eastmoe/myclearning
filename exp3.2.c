@@ -8,5 +8,5 @@ void main()
  {
   result=result+i*i; //result=上次结果+本次计数器的平方
  }
- printf("Result=%ld", result); //输出result
+ printf("Result=%ld\n", result); //输出result
 }
