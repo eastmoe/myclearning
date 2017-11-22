@@ -7,7 +7,7 @@ for (i=0;i<3;i++)  \\行循环
 {
 	for (j=0;j<4;j++)  \\列循环
 	{
-		printf("请输入数组Array(%d，%d)的值",i,j);
+		printf("请输入数组Array中的元素(%d，%d)的值",i,j);
 		scanf("%d",&array[i][j]);
 	}
 }
