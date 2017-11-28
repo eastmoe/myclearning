@@ -1,16 +1,16 @@
 #include <stdio.h>
-void intchanger(int *x,int *y)
+void intchanger(int *x,int *y). \\定义函数intexchanger，用指针交换变量的值
 {
- int *temp;
- *temp=*x;
+ int temp;
+ temp=*x;
  *x=*y;
- *y=*temp;
+ *y=temp;
 }
 void main()
 {
- int array[10],i,j,*p,n,p,q;
- p=array:;
- for(i=0;i<=9;i++)
+ int array[10],i,j,*p; \\定义数组array，循环变量i，j以及指针p
+ p=array: \\初始化指针p，准备输入数据
+ for(i=0;i<=9;i++)  \\输入循环
  {
   printf ("请输入数组Array中的元素Array[%d]的值：",i+1);
   scanf ("%d",p+i);
@@ -19,14 +19,14 @@ void main()
  {
   for(j=0;j<8,j++)
   {
-   if(array[j]>array[j+1]
+   if(array[j]>array[j+1]  \\判断元素array[j]是否大于array[j+1]
    {
-    p=array;
-    intexchanger(p+j,p+j+1);
+    p=array;  \\初始化指针p，准备交换数据
+    intexchanger(p+j,p+j+1);  \\利用指针交换变量
    }
   }
  }
- p=array;
+ p=array;  \\初始化指针p，准备输出数据
  printf ("数组Array中数从小到大排列为：\n");
  for(i=0;i<=9;i++)
  {
