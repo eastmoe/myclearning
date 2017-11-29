@@ -1,5 +1,5 @@
 #include <stdio.h>
-void intchanger(int *x,int *y). //定义函数intexchanger，用指针交换变量的值
+void intexchanger(int *x,int *y)  //定义函数intexchanger，用指针交换变量的值
 {
  int temp;
  temp=*x;
@@ -17,9 +17,9 @@ void main()
  }
  for(i=0;i<9;i++)
  {
-  for(j=0;j<8,j++)
+  for(j=0;j<8;j++)
   {
-   if(array[j]>array[j+1]  //判断元素array[j]是否大于array[j+1]
+   if(array[j]>array[j+1])  //判断元素array[j]是否大于array[j+1]
    {
     p=array;  //初始化指针p，准备交换数据
     intexchanger(p+j,p+j+1);  //利用指针交换变量
@@ -30,7 +30,7 @@ void main()
  printf ("数组Array中数从小到大排列为：\n");
  for(i=0;i<=9;i++)
  {
-  printf("%d",p+i);
+  printf("%d ",p+i);
  }
  printf ("\n");
 }
