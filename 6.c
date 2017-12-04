@@ -7,9 +7,9 @@ rolln(int n)
 }
 void main()
 {
-	int a,n,i,b,rec;
-    step1:	printf("请输入当前50音学习进度:");
-	scanf("%d",&a);
+    int a,n,i,b,rec;
+    step1:  printf("请输入当前50音学习进度:");
+    scanf("%d",&a);
     step2:  printf("请输入你想测试的次数:");
     scanf("%d",&i);
     srand((unsigned)time(0));
@@ -45,7 +45,7 @@ void main()
 	        case 24:printf("ね\n");break;
 	        case 25:printf("の\n");break;
 	        case 26:printf("は\n");break;
-            case 27:printf("ひ\n");break;
+                case 27:printf("ひ\n");break;
 	        case 28:printf("ふ\n");break;
 	        case 29:printf("へ\n");break;
 	        case 30:printf("ほ\n");break;
