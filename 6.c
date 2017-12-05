@@ -1,26 +1,26 @@
 #include<stdio.h>
-#include<stdlib.h>
-#include<time.h>
+#include<stdlib.h>  //支持rand函数，生成随机数
+#include<time.h>  //支持srand函数，给rand函数做种
 
-rolln(int n)
+rolln(int n)  //定义rolin函数，用rand函数生成1-n的随机整数
 {
 	int a;
-	a=(rand()%n+1);
+	a=(rand()%n+1);  //rand()%(n-m+1)+m用来生成m-n范围内的整数
 	return a;
 }
 void main()
 {
     int a,n,i,b,rec;
-    step1:  printf("请输入当前50音学习进度:");
+    step1:  printf("请输入当前50音学习进度:");  //标记step1，结束时可选返回
     scanf("%d",&a);
-    step2:  printf("请输入你想测试的次数:");
-    scanf("%d",&i);
-    srand((unsigned)time(0));
-	for(i=0;i<n;i++)
+    step2:  printf("请输入你想测试的次数:");  //标记step2，结束时可选返回
+    scanf("%d",&n);
+    srand((unsigned)time(0));  //利用当前时间给rand函数做种
+	for(i=0;i<n;i++)  //利用for做多次测试循环
 	{
-       	b=rolln(a);
+       	b=rolln(a);  //用rolin函数产生随机数并赋值给b
         printf("第%d次检测开始，请回想这个音:",i+1);
-	    switch (b)
+	    switch (b)  //利用随机数随机选取已学过的音
 		{
 	        case 1:printf("あ\n");break;
 	        case 2:printf("い\n");break;
@@ -73,10 +73,10 @@ void main()
 	        case 49:printf("え\n");break;
 	        case 50:printf("を\n");break;
 		}
-	    system("pause");
+	    system("pause");  //每一次测试后暂停
 	}
 	printf("测试结束，按[1]更新学习进度并重新开始，按[2]从当前进度重新开始，按[3]退出程序，请输入你想要的选项并按[Enter]健:");
-	scanf("%d",&rec);
+	scanf("%d",&rec);  //根据选择，利用goto语句返回对应的位置
 	if(rec==1)
 		goto step1;
 	if(rec==2)
