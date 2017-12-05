@@ -70,6 +70,7 @@ void main()
 	        case 49:printf("え\n");break;
 	        case 50:printf("を\n");break;
 		}
+	    system("pause");
 	}
 	printf("测试结束，按[1]更新学习进度并重新开始，按[2]从当前进度重新开始，按[3]退出程序，请输入你想要的选项并按[Enter]健:");
 	scanf("%d",&rec);
