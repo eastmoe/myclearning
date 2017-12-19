@@ -4,7 +4,7 @@ void main()
  int intnu,intbn,intsn,intother,nt;
  char ct;
  FILE *fp1;
- if((fopen("d:\\in.txt","r"))=NULL)
+ if((fp1=open("d:\\in.txt","r"))=NULL)
  {
   printf("打开文件失败!");
   exit(0);
@@ -41,4 +41,5 @@ intother=0;
   }
  }
 printf("文件中有个%d数字，%d个大写字母，%d个小写字母，%d个其他字符。\n",intnu,intbn,intsn,intother);
+   fclose(fp1);
 }
